@@ -1,0 +1,370 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  
+}
+#nav{
+  height: 100px;
+  width: 100%;
+z-index: 99;
+position: fixed;
+display: flex;
+align-items: center;
+justify-content: space-between;
+  }
+  
+  #nav-part1 img{
+    height: 120px;
+    width: 220px;
+    }
+  
+  #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  
+     #nav-part2 #links a{
+     font-weight: 450;
+     text-decoration: none;
+     font-size: 14px;
+     color: #333;
+     margin-right: 30px;
+ margin: 0px 20px;
+     text-transform: uppercase;
+    }
+  #icon{
+    margin: 20px;
+    font-weight: 100;
+    font-size: 18px;
+    background-color: #F7F7F7;
+    border-radius: 50px;
+  }
+#cursor{
+    position: fixed;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: burlywood;
+  transform: translate(-50%,-50%) scale(0);
+}
+body{
+  background-color: #F7F7F7;
+}
+*::selection{
+  color: white;
+  background-color: black;
+}
+#main{
+  position: relative;
+}
+
+#page1{
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 0 20px;
+padding-top:20vh ;
+  
+}
+#page1 h1{
+  letter-spacing: -15px;
+  line-height: 30vh;
+  font-size: 18vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#videocontainer{
+  height: 100vh;
+  width: 100%;
+  background-color: gray;
+  margin-top: 2vw;
+  position: relative;
+}
+video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#videocontainer #play{
+  padding: 3vw 2vw;
+  background-color: black;
+  color: white;
+  font-size: 1.5vw;
+  position: fixed;
+  border-radius: 50%;
+  opacity: 0;
+scale: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#page2{
+  min-height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+  padding: 3vw 1vw;
+display: flex;
+align-items: center;
+justify-content: space-between;
+  }
+  #page2 .elem {
+    height: 100vh;
+    width: 31%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.2;
+  }
+  #page2 .elem .dets{
+    top: 50%;
+    left: 15%;
+    border-radius: 60px;
+    height: 40px;
+    width: 70%;
+    background-color: sandybrown;
+    position: absolute;
+    z-index: 9;
+    
+  }
+  #page2 .elem .dets:hover{
+    
+    border-radius: 60px;
+    height: 200px;
+    width: 70%;
+    background-color: sandybrown;
+    position: absolute;
+    z-index: 9;
+    
+  }
+  
+  
+  
+  @media (max-width: 600px) {
+    
+    #nav{
+  height: 100px;
+  width: 100%;
+z-index: 99;
+position: fixed;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 4px;
+  }
+  
+  #nav-part1 img{
+    height: 120px;
+    width: 220px;
+    margin-left: -46px;
+    }
+  
+  #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+     #nav-part2 #links a{
+     font-weight: 450;
+     text-decoration: none;
+     font-size: 14px;
+     color: #333;
+     margin-right: 30px;
+ margin: 0px 20px;
+     text-transform: uppercase;
+    display: none;
+       
+     }
+  #icon{ transform: translateX(7px);
+    margin: 20px;
+    font-weight: 100;
+    font-size: 18px;
+    background-color: #F7F7F7;
+    border-radius: 50px;
+    
+  }
+    
+    #page1 {
+      min-height: 70vh;
+  width: 100%;
+   padding: 0 3vw;
+  padding-top: 25vh;
+  
+}
+      #page1 h1{ 
+  letter-spacing: -7px;
+  line-height: 13vh;
+  font-size: 16vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#videocontainer {
+  height: 40vh;
+  margin-top: -1vw;
+}
+#videocontainer #play {
+  padding: 7vw 5.2vw;
+  top: 50%;
+  left: 50%;
+  font-size: 4.5vw;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 1;
+  scale: 1;
+  transform: translate(-50%,-50%);
+  
+}
+#page2{
+  min-height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+  padding: 13vw 4vw;
+  flex-direction: column;
+display: flex;
+align-items: center;
+justify-content: space-between;
+  }
+  #page2 .elem {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 3vw;
+  }
+  #page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.2;
+  }
+#page2 .elem .dets {
+  top: 50%;
+  left: 15%;
+  border-radius: 60px;
+  height: 40px;
+  width: 70%;
+  background-color: sandybrown;
+  position: absolute;
+  z-index: 9;
+  
+}
+#page3 {
+  height: 120vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.child{
+  height: 55vh;
+  width: 88vw;
+  padding: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child img{
+  height: 100%;
+}
+  }
+  
+  
+  
+  #page3{
+    height:120vh;
+    width: 100%;
+    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+    }
+    .child {
+      height: 55vh;
+      width: 40vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .child img{
+      height: 100%;
+    }
+  
+  
+  
+  
+  
+  #page4{
+    min-height: 120vh;
+    height: 100%;
+    background-color: #F7F7F7;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+  }
+  .childs{
+    height: 55vh;
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #childs2 img{
+    height: 100vh;
+    width: 100vw;
+  }
+ h3{
+   
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  align-items: column;
+  font-size: 20px;
+  line-height: 32px;
+  transform: translateX(-39px);
+  
+}  
+#text h1{
+  transform: translateX(-39px);
+
+}
+
+ h4{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  align-items: column;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+p{
+  text-align: center;
+  max-width: 600px;
+  transform: translateX(260px);
+  
+}
+
+  
